@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPIC MONITOR DATA</title>
+    <link rel="icon" href="IMG/NPIC Digital Laundry Logo.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100&family=Moul&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script> 
+    <script src="JS/script.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <span>
+                <h1 id="title">ទិន្នន័យអគ្គិសនី និងទឹក</h1>
+                <img src="IMG/NPIC Digital Laundry Logo.png" alt="NPIC Digital Laundry Logo ">
+            </span>
+        </header>
+
+        <!-- CONTAIN -->
+        <main>
+
+            <section class="electric">
+                <div class="top">
+                    <span>
+                        <img src="IMG/Electric meter.webp" alt="Electric meter icon">
+                        <h2>ថាមពលអគ្គិសនី</h2>
+                    </span>
+                </div>
+                <div class="left">
+                    <h2>ការប្រើប្រាស់ខែមុន</h2>
+                    <span>
+                        <h3 id="e_last">00.00<h4>kWh</h4></h3>
+                    </span>
+                </div>
+                <div class="right">
+                    <h2>ការប្រើប្រាស់ខែនេះ</h2>
+                    <span>
+                        <h3 id="e_now">00.00<h4>kWh</h4></h3>
+                    </span>
+                </div>
+                <div class="buttom">
+                    <h2>ថាមពលអគ្គិសនីបានប្រើប្រាស់</h2>
+                    <span>
+                        <h3 id="e_total">00.00 <h4>kWh</h4></h3>
+                    </span>
+                </div>
+            </section>
+
+            <section class="Water">
+                <div class="top">
+                    <span>
+                        <img src="IMG/Water flow meter.png" alt="Water meter icon">
+                        <h2>ការប្រើប្រាស់ទឹក</h2>
+                    </span>
+                </div>
+                <div class="left">
+                    <h2>ការប្រើប្រាស់ខែមុន</h2>
+                    <span>
+                        <h3 id="w_last">00.00 <h4>m<sup>3</sup</h4></h3>
+                    </span>
+                </div>
+                <div class="right">
+                    <h2>ការប្រើប្រាស់ខែនេះ</h2>
+                    <span>
+                        <h3 id="w_now">00.00 <h4>m<sup>3</sup></h4></h3>
+                    </span>
+                </div>
+                <div class="buttom">
+                    <h2>ការប្រើប្រាស់ទឹកបានប្រើប្រាស់</h2>
+                    <span>
+                        <h3 id="w_total">00.00 <h4>m<sup>3</sup</h4></h3>
+                    </span>
+                </div>
+            </section>
+        </main>
+
+    </div>
+</body>
+</html>

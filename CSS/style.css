@@ -1,0 +1,284 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* HEADER */
+header {
+    font-family: Moul,  sans-serif;
+    text-align: center;
+    background-color: lightgray;
+    color: #030880;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+header span {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* font-size: 20px; */
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+/* SECTIONS */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    font-family: Battambang , sans-serif;
+}
+
+/* Energy & Water Meters */
+.electric, .Water {
+    color: white;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 10px;
+    width: 48%;
+    min-width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.electric .top span {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #030880;
+    padding: 0px 10px 0px 10px; /* For change position between img and text*/
+}
+
+.electric .top img {
+    width: 60px;
+    height: 60px;
+}
+
+.electric .left {
+    width: 49%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #030880;
+    float: left;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.electric .right {
+    width: 49%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #030880;
+    float: left;
+    margin-top: 20px;
+    border-radius: 8px;
+    margin-left: 2%;
+}
+.electric .left span, .electric .right span, .electric .buttom span {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.electric .left h3, .electric .right h3, .electric .buttom h3 {
+    width: 90px;
+    height: 40px;
+    display: inline;
+    font-size: 22px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.electric .left h4, .electric .right h4, .electric .buttom h4 {
+    display: inline;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+.electric .buttom {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #030880;
+    float: left;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+
+.Water .top span {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #030880;
+    padding: 0px 20px 0px 10px; /* For change position between img and text*/
+}
+
+.Water .top img {
+    width: 80px;
+    height: 80px;
+}
+
+.Water .left {
+    width: 49%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #030880;
+    float: left;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.Water .right {
+    width: 49%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #030880;
+    float: left;
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-left: 2%;
+}
+
+.Water .left span, .Water .right span, .Water .buttom span {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Water .left h3, .Water .right h3, .Water .buttom h3 {
+    width: 90px;
+    height: 40px;
+    color: black;
+    display: inline;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+}
+.Water .left h4, .Water .right h4, .Water .buttom h4 {
+    color: white;
+    display: inline;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+
+.Water .buttom {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #030880;
+    float: left;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+
+/* Responsive Design */
+
+/* Small Mobile Phones */
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: -2px -2px -2px 10px;
+
+        font-size: 12px;
+    }
+    header img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .electric, .Water {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .electric .buttom ,.Water .buttom {
+        margin-top: 20px;
+    }
+
+    .electric .left h2, .electric .right h2, .electric .buttom h2,
+    .Water .left h2, .Water .right h2, .Water .buttom h2{
+        font-size: 23px;
+    }
+
+    .electric .top span {
+        padding: 0px 30px 0px 20px; /* For change position between img and text*/
+    }
+    .Water .top span {
+        padding: 0px 30px 0px 20px; /* For change position between img and text*/
+    }
+
+} 
+
+/* Tablets & iPads */
+@media screen and (min-width: 481px) and (max-width: 830px) {
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+  
+    header {
+        width: 80%;
+        font-size: 12px;
+    }
+    .electric, .Water {
+        width: 80%;
+    }
+}
+
+/* Desktop & Large Screens */
+@media screen and (min-width: 1025px) {
+
+    .electric, .Water {
+        width: 45%;
+    }
+}
